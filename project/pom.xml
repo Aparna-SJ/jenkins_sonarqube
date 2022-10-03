@@ -47,8 +47,8 @@
                             <contextUrl>http://13.214.128.229:8082/artifactory</contextUrl>
                             <username>admin</username>
                             <password>Aparna@12345</password>
-                            <repoKey>libs-release-local</repoKey>
-                            <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
+                            <repoKey>demo</repoKey>
+                            <snapshotRepoKey>demo</snapshotRepoKey>
                         </publisher>
                     </configuration>
                 </execution>
