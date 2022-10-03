@@ -3,27 +3,20 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-       
+
     <groupId>com.sonarqube.example</groupId>
     <artifactId>sonarqube-maven-example</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <properties>
-	<java.version>11</java.version>
-    </properties>
 
     <name>Example of basic Maven project to integrate with SonarQube</name>
 
     <dependencies>
         <dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-web</artifactId>
-	</dependency>
-
-	<dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-test</artifactId>
-                  <scope>test</scope>
-          </dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -46,7 +39,9 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-       <profiles>
+    </build>
+
+    <profiles>
         <profile>
             <id>sonar</id>
             <activation>
