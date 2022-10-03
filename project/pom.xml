@@ -21,6 +21,13 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+	<dependency>
+            <groupId>jdk.tools</groupId>
+            <artifactId>jdk.tools</artifactId>
+            <scope>system</scope>
+            <version>1.8</version>
+            <systemPath>${java.home}/../lib/tools.jar</systemPath>
+       </dependency>
     </dependencies>
 
     <build>
