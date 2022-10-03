@@ -27,6 +27,33 @@
     <build>
         <pluginManagement>
             <plugins>
+		<plugin>
+            <groupId>org.jfrog.buildinfo</groupId>
+            <artifactId>artifactory-maven-plugin</artifactId>
+            <version>3.2.3</version>
+            <inherited>false</inherited>
+            <executions>
+                <execution>
+                    <id>build-info</id>
+                    <goals>
+                        <goal>publish</goal>
+                    </goals>
+                    <configuration>
+                        <deployProperties>
+                            <gradle>awesome</gradle>
+                            <review.team>qa</review.team>
+                        </deployProperties>
+                        <publisher>
+                            <contextUrl>http://13.214.128.229:8082/artifactory</contextUrl>
+                            <username>admin</username>
+                            <password>Aparna@12345</password>
+                            <repoKey>libs-release-local</repoKey>
+                            <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
+                        </publisher>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
