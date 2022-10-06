@@ -40,7 +40,7 @@
                     </goals>
                     <configuration>
                         <publisher>
-                            <contextUrl>http://13.214.128.229:8081/artifactory</contextUrl>
+                            <contextUrl>http://54.151.135.100:8081/artifactory</contextUrl>
                             <username>admin</username>
                             <password>Aparna@12345</password>
                             <repoKey>libs-release-local</repoKey>
